@@ -26,9 +26,9 @@ TRANSFER_COUNT = 2500
 def generate_pixels(width: int, height: int) -> List[Tuple[int, int]]:
     """Generate a list of all (x, y) pixel locations in random order"""
     pixels = []
-    for w in range(width):
-        for h in range(height):
-            pixels.append((w, h))
+    for x in range(width):
+        for y in range(height):
+            pixels.append((x, y))
     shuffle(pixels)
     return pixels
 
